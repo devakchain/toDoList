@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url(https://images.pexels.com/photos/7130469/pexels-photo-7130469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+}
+
+.inputApp,
+.taskList {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  width: 50%;
+  margin: 50px auto;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  font-weight: 370;
+}
+
+.inputApp h1 {
+  font-variation-settings: "wght" 300;
+}
+
+.inputApp .textinput {
+  width: 450px;
+  padding: 4px;
+  border: none;
+  border: 2px solid silver;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  position: relative;
+}
+
+.inputApp .timeinput {
+  width: 80px;
+  padding: 1px;
+  position: absolute;
+  top: 21%;
+  left: 60%;
+  border: none;
+}
+
+.inputApp button {
+  margin-left: 10px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-variation-settings: "wght" 300;
+}
+
+.inputApp button:hover {
+  opacity: 0.7;
+}
+
+.inputApp button:nth-of-type(1) {
+  padding: 10px;
+  color: white;
+}
+
+.inputApp button:nth-of-type(2) {
+  padding: 10px;
+  color: white;
+}
+
+.box1 {
+  width: 600px;
+  border: 2px solid silver;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 6px, rgba(0, 0, 0, 0.2) 0px 3px 6px; */
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 2px,
+    rgba(240, 46, 170, 0.2) 0px 2px, rgba(240, 46, 170, 0.1) 0px 2px,
+    rgba(240, 46, 170, 0.05) 0px 2px;
+}
+
+.box1 li {
+  flex: 1;
+}
+
+.box1 span {
+  flex: 4;
+}
+
+.box1 button {
+  flex: 1;
+  margin-right: 10px;
+  max-width: 80px;
+  padding: 5px;
+  color: white;
+  font-variation-settings: "wght" 300;
+}
+
+.box1 li {
+  list-style: none;
+  padding: 10px;
+}
+
+.taskList {
+  padding-bottom: 45px;
+}
+
+@media (max-width: 1100px) {
+  .inputApp,
+  .taskList {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    width: 80%;
+    margin: 50px auto;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    font-weight: 370;
+  }
+
+  .inputApp .textinput {
+    width: 450px;
+    padding: 4px;
+    border: none;
+    border: 2px solid silver;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    position: relative;
+  }
+
+  .inputApp .timeinput {
+    width: 80px;
+    padding: 1px;
+    position: absolute;
+    top: 21%;
+    left: 64%;
+    border: none;
+  }
+
+  .box1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .inputApp,
+  .taskList {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    width: 80%;
+    margin: 50px auto;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    font-weight: 370;
+  }
+
+  .inputApp .textinput {
+    width: 350px;
+    padding: 4px;
+    border: none;
+    border: 2px solid silver;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    position: relative;
+  }
+
+  .inputApp .timeinput {
+    width: 80px;
+    padding: 1px;
+    position: absolute;
+    top: 20%;
+    left: 64%;
+    border: none;
+  }
+
+  .box1 {
+    width: 80%;
+    border: 2px solid silver;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 6px, rgba(0, 0, 0, 0.2) 0px 3px 6px; */
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 2px,
+      rgba(240, 46, 170, 0.2) 0px 2px, rgba(240, 46, 170, 0.1) 0px 2px,
+      rgba(240, 46, 170, 0.05) 0px 2px;
+  }
+}
